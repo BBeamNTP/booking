@@ -10,14 +10,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('asset/js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/app.css') }}" rel="stylesheet">
 
     {{--    boostrap--}}
     {{--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">--}}
@@ -73,8 +73,10 @@
 
                             <a class="nav-link">
                                 0
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                     class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
                                 </svg>
 
                             </a>
@@ -129,12 +131,15 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Modal Heading</h4>
+                        <h4 class="modal-title">เพิ่มสินค้า</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
                     <div class="container">
-                        <form action="/action_page.php" class="needs-validation" novalidate>
+                        {{--                        <form id="Create_product" class="needs-validation" enctype="multipart/form-data" novalidate>--}}
+                        <form id="Create_product" action="{{url('/store/product')}}" method="POST"
+                              class="needs-validation" enctype="multipart/form-data" novalidate>
+                            @csrf
                             <p>ภาพสินค้า :</p>
                             <div class="custom-file mb-3">
                                 <input type="file" class="custom-file-input" id="customFile" name="filename">
@@ -142,17 +147,17 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="uname">ชื่อสินค้า :</label>
-                                <input type="text" class="form-control" id="uname" placeholder="Enter username"
-                                       name="uname" required>
+                                <label for="product_name">ชื่อสินค้า :</label>
+                                <input type="text" class="form-control" id="product_name" placeholder="ชื่อสินค้า"
+                                       name="product_name" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
 
                             <div class="form-group">
-                                <label for="pwd">ราคา :</label>
-                                <input type="text" class="form-control" id="pwd" placeholder="Enter password"
-                                       name="pswd" required>
+                                <label for="price">ราคา :</label>
+                                <input type="text" class="form-control col-10" id="price" placeholder="ราคา"
+                                       name="price" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
@@ -162,7 +167,7 @@
                                     <label for="pwd">สี :</label>
                                     <div class="container row form-inline" id="div_color">
                                         <div class="mb-1"><a>1 : <input type="text"
-                                                                        class="form-control" style="width: 90%"
+                                                                        class="form-control" style="width: 95%"
                                                                         id="color1"
                                                                         placeholder="สี"
                                                                         name="color[]" required></a></div>
@@ -170,7 +175,8 @@
                                     <div class="valid-feedback">Valid.</div>
                                     <div class="invalid-feedback">Please fill out this field.</div>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group col-3" align="right">
+                                    <br>
                                     <div class="container " id="div_color" onclick="add_color()">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                              fill="currentColor" class="bi bi-file-plus" viewBox="0 0 16 16">
@@ -192,16 +198,17 @@
                                 <div class="form-group col-9">
                                     <label for="pwd">ขนาด :</label>
                                     <div class="container row form-inline" id="div_size">
-                                        <div class="mb-1"><a>1 : <input type="text"
-                                                                        class="form-control" style="width: 90%"
-                                                                        id="size1"
-                                                                        placeholder="ขนาด"
-                                                                        name="size[]" required></a></div>
+                                        <div class="mb-1">
+                                            <a>1 : <input type="text" class="form-control" style="width: 95%"
+                                                          id="size1" placeholder="ขนาด" name="size[]" required>
+                                            </a>
+                                        </div>
                                     </div>
                                     <div class="valid-feedback">Valid.</div>
                                     <div class="invalid-feedback">Please fill out this field.</div>
                                 </div>
-                                <div class="form-group col-3">
+                                <div class="form-group col-3" align="right">
+                                    <br>
                                     <div class="container " id="div_color" onclick="add_size()">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                              fill="currentColor" class="bi bi-file-plus" viewBox="0 0 16 16">
@@ -217,8 +224,9 @@
                                     <div class="invalid-feedback">Please fill out this field.</div>
                                 </div>
                             </div>
-
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div align="right">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
                             <br><br>
                         </form>
                     </div>
@@ -268,12 +276,93 @@
 <script>
     var loopsize = 2;
 
-    function add_color() {
+    function add_size() {
         var a = '';
 
-        a += '<div class="mb-1"><a>' + loopsize + ' :  <input type="text" class="form-control" style="width: 90%"  id="size' + loopsize + '" placeholder="สี" name="size[]" required></a></div>'
+        a += '<div class="mb-1"><a>' + loopsize + ' :  <input type="text" class="form-control" style="width: 90%"  id="size' + loopsize + '" placeholder="ขนาด" name="size[]" required></a></div>'
         $('#div_size').append(a)
         loopsize = loopsize + 1;
     }
 </script>
 
+{{--<script>--}}
+{{--    function create_data() {--}}
+{{--        var r = confirm('คุณต้องการสร้างโฆษณานี้ ใช่หรือไม่');--}}
+{{--        if (r == true) {--}}
+{{--            var formData = new FormData($("#Create_product")[0]);--}}
+{{--            $.ajax({--}}
+{{--                url: "{{url('store/product')}}",--}}
+{{--                type: "POST",--}}
+{{--                data: formData,--}}
+{{--                processData: false, //Not to process data--}}
+{{--                contentType: false, //Not to set contentType--}}
+{{--                success: function (res) {--}}
+{{--                    if (res == 'Success') {--}}
+{{--                        alert('สร้างโฆษณา สำเร็จ')--}}
+{{--                        window.location.reload();--}}
+{{--                    } else {--}}
+{{--                        alert('สร้างโฆษณา ไม่สำเร็จ')--}}
+{{--                        // window.location.reload();--}}
+{{--                    }--}}
+{{--                },--}}
+{{--                error: function (res) {--}}
+{{--                    if(res.responseText == '{"message":"The given data was invalid.","errors":{"advertising_img":["The advertising img may not be greater than 2048 kilobytes."]}}'){--}}
+{{--                        alert('สร้างโฆษณา ไม่สำเร็จ : รูปมีขนาดมากว่า 2 MB ')--}}
+{{--                    }else{--}}
+{{--                        alert('505 : Internal server error')--}}
+{{--                    }--}}
+{{--                    // window.location.reload();--}}
+{{--                }--}}
+{{--            });--}}
+
+{{--            --}}{{--$.ajax({--}}
+{{--            --}}{{--    url: "{{url('Advertising/store')}}",--}}
+{{--            --}}{{--    type: "POST",--}}
+{{--            --}}{{--    data: $("#Create_product").serialize(),--}}
+{{--            --}}{{--    success: function (res) {--}}
+{{--            --}}{{--        if (res == 'Success') {--}}
+{{--            --}}{{--            alert('สร้างโฆษณา สำเร็จ')--}}
+{{--            --}}{{--            // window.location.reload();--}}
+{{--            --}}{{--        } else {--}}
+{{--            --}}{{--            alert('สร้างโฆษณา ไม่สำเร็จ')--}}
+{{--            --}}{{--            // window.location.reload();--}}
+{{--            --}}{{--        }--}}
+{{--            --}}{{--    },--}}
+{{--            --}}{{--    error: function (res) {--}}
+{{--            --}}{{--        alert('505 : Internal server error ajax')--}}
+{{--            --}}{{--        // window.location.reload();--}}
+{{--            --}}{{--    }--}}
+{{--            --}}{{--});--}}
+{{--        }--}}
+{{--    }--}}
+
+{{--    function update_data(id) {--}}
+{{--        var r = confirm('คุณต้องการอัพเดรตโฆษณานี้ ใช่หรือไม่');--}}
+{{--        if (r == true) {--}}
+{{--            var formData = new FormData($("#Create_product")[0]);--}}
+{{--            $.ajax({--}}
+{{--                url: "{{url('Advertising/')}}/" + id + "/update",--}}
+{{--                type: "POST",--}}
+{{--                data: formData,--}}
+{{--                processData: false, //Not to process data--}}
+{{--                contentType: false, //Not to set contentType--}}
+
+{{--                success: function (res) {--}}
+{{--                    console.log(res)--}}
+{{--                    if (res == 'Success') {--}}
+{{--                        alert('อัพเดรตโฆษณา สำเร็จ')--}}
+{{--                        window.location.reload();--}}
+{{--                    } else {--}}
+{{--                        alert('อัพเดรตโฆษณา ไม่สำเร็จ')--}}
+{{--                        // window.location.reload();--}}
+{{--                    }--}}
+{{--                },--}}
+{{--                error: function (res) {--}}
+{{--                    alert('505 : Internal server error ajax')--}}
+{{--                    // window.location.reload();--}}
+{{--                }--}}
+{{--            });--}}
+{{--        }--}}
+{{--    }--}}
+
+{{--</script>--}}

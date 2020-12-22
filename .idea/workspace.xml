@@ -6,32 +6,102 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85315e4c-c212-47a7-8f82-1cc79a896795" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/image/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/image/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/image/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/image/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/.styleci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Console/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Exceptions/Handler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Kernel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/Authenticate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/TrustHosts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Providers/AppServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Providers/AuthServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Providers/EventServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Providers/RouteServiceProvider.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/artisan" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/bootstrap/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/bootstrap/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/app.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/broadcasting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/cache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/cors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/filesystems.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/hashing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/logging.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/queue.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/services.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/session.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/config/view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/factories/UserFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/seeds/DatabaseSeeder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/public/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/public/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/lang/en/pagination.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/lang/en/passwords.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/lang/en/validation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/sass/app.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/routes/api.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/routes/channels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/routes/console.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/routes/web.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/server.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/app/public/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/framework/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/framework/cache/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/framework/cache/data/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/framework/sessions/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/framework/testing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/framework/views/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/storage/logs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/tests/CreatesApplication.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/tests/TestCase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/webpack.mix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +234,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thailand-beam" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -193,6 +263,7 @@
       <workItem from="1608619793588" duration="471000" />
       <workItem from="1608620279305" duration="143000" />
       <workItem from="1608649351912" duration="614000" />
+      <workItem from="1608655423605" duration="2529000" />
     </task>
     <servers />
   </component>
@@ -212,11 +283,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1608645669954">
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608657113686">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1600.95.1600.860@0.0.1920.1040" timestamp="1608657113686" />
+    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1608656652114">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608627104669" />
-    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040/-1600.95.1600.860@0.0.1920.1040" timestamp="1608645669954" />
+    <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040/-1600.95.1600.860@0.0.1920.1040" timestamp="1608656652114" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1608647475971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,5 +312,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="330" y="145" width="1031" height="534" key="find.popup/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608624552083" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
+          <line>243</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
