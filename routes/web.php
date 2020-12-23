@@ -21,3 +21,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/store/product', 'HomeController@store')->name('product.store');
+Route::get('/product/detail/{id}', 'HomeController@detail')->name('product.detail');
+Route::post('/product/booking/{id}', 'HomeController@booking')->name('product.booking');
+Route::get('/get_cart', 'HomeController@getCart')->name('cart');
+Route::get('/view_cart', 'HomeController@viewCart')->name('view.cart');

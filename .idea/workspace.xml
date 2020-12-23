@@ -234,16 +234,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thailand-beam" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Bookings\public\image" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Bookings" />
       <recent name="C:\xampp\htdocs\Bookings\asset" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\booking\resources\views" />
+      <recent name="C:\xampp\htdocs\booking" />
+      <recent name="C:\xampp\htdocs\Bookings\public\image" />
     </key>
   </component>
   <component name="RunManager">
@@ -264,6 +266,7 @@
       <workItem from="1608620279305" duration="143000" />
       <workItem from="1608649351912" duration="614000" />
       <workItem from="1608655423605" duration="2529000" />
+      <workItem from="1608693102378" duration="26991000" />
     </task>
     <servers />
   </component>
@@ -283,14 +286,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608657113686">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="552" y="218" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1608716268774">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="552" y="218" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608716268774" />
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040/-1600.95.1600.860@0.0.1920.1040" timestamp="1608657113686" />
-    <state x="686" y="211" key="FileChooserDialogImpl" timestamp="1608656652114">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608699771893">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608627104669" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608699771893" />
     <state x="686" y="211" key="FileChooserDialogImpl/0.0.1920.1040/-1600.95.1600.860@0.0.1920.1040" timestamp="1608656652114" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1608647475971">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -308,23 +312,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.95.1600.860@0.0.1920.1040" timestamp="1608647475971" />
-    <state x="330" y="145" width="1031" height="534" key="find.popup" timestamp="1608624552083">
+    <state x="330" y="145" width="1031" height="534" key="find.popup" timestamp="1608720274772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="330" y="145" width="1031" height="534" key="find.popup/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608624552083" />
+    <state x="330" y="145" width="1031" height="534" key="find.popup/0.0.1536.824/-1920.0.1536.824@0.0.1536.824" timestamp="1608720274772" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
+          <line>259</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>243</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/resources/views/product_detail.blade.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
